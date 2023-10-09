@@ -1,10 +1,62 @@
+'use client'
 import React from 'react';
 import {SectionHeading} from "@/components/section-heading";
+import {useSectionInView} from "@/lib/hooks";
+import {motion} from "framer-motion";
+import {sendEmail} from "@/actions/sendEmail";
 
-export const Contacts = () => {
+import {SubmitBtn} from "@/components/submit-btn";
+
+export const Contact = () => {
+    const {ref} = useSectionInView({sectionName: 'About', threshold: 0.5})
+
+
+
     return (
-        <section>
-<SectionHeading>Contacts</SectionHeading>
-        </section>
+        <motion.section ref={ref}
+                        id='contact'
+                        className='mb-20 sm:mb-28 w-[min(100%,38rem)] text-center'
+                        initial={{
+                            opacity: 0
+                        }}
+                        whileInView={{
+                            opacity: 1
+                        }}
+                        transition={{
+                            duration: 1
+                        }}
+                        viewport={{
+                            once: true
+                        }}
+        >
+            <SectionHeading>Contact me</SectionHeading>
+            <p className='text-gray-700 -mt-6 dark:text-white/80'>
+                Please contact me directly at <a className='underline '
+                                                 href='mailto:bogdanbw@gmail.com'>bogdanbw@gmail.com</a> or through this
+                form.
+            </p>
+            <form className='mt-10 flex flex-col dark:text-black/80'
+                  action={async (formData) => {
+                      await sendEmail(formData)
+                  }}
+            >
+                <input className='h-14 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80
+                dark:focus:bg-opacity-100 transition-all dark:outline-none'
+                       name='senderEmail'
+                       type='email'
+                       maxLength={500}
+                       placeholder='Your  email'
+                       required
+                />
+                <textarea className='h-52 my-3 p-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80
+                dark:focus:bg-opacity-100 transition-all dark:outline-none'
+                          name='message'
+                          placeholder='Your message'
+                          maxLength={5000}
+                          required
+                />
+                <SubmitBtn/>
+            </form>
+        </motion.section>
     );
 };

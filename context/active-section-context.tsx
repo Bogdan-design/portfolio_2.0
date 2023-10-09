@@ -13,7 +13,7 @@ type ActiveSectionContextType = {
     setActiveSection: Dispatch<SetStateAction<SectionName>>
 }
 
-export const ActiveSectionContext = createContext<ActiveSectionContextType | null>(null)
+const ActiveSectionContext = createContext<ActiveSectionContextType | null>(null)
 
 export const ActiveSectionContextProvider = ({children}: ActiveSectionContextProviderProps) => {
     const [activeSection, setActiveSection] = useState<SectionName>('Home')
@@ -30,3 +30,5 @@ export const useActiveSectionContext =()=> {
     }
     return context
 }
+
+

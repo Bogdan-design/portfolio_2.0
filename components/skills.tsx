@@ -27,7 +27,7 @@ export const Skills = () => {
             <ul className='flex flex-wrap justify-center gap-2 text-lg text-gray-800'
             >
                 {skillsData.map((s, i) => (
-                    <motion.li className='bg-white border-black/[0.1] rounded-xl px-5 py-3'
+                    <motion.li className='bg-white border-black/[0.1] rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80'
                                key={i}
                                variants={fadeInAnimationsVariants}
                                initial='initial'
