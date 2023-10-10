@@ -2,9 +2,9 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import lifebook from "@/public/Lifebook.jpg";
+import todolist from "@/public/todolist.jpg";
+import cards from "@/public/cards.jpg";
 
 export const links = [
     {
@@ -36,72 +36,82 @@ export const links = [
 export const experiencesData = [
     {
         title: "Graduated bootcamp",
-        location: "Miami, FL",
+        location: "Poland, Warsaw",
         description:
             "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
         icon: React.createElement(LuGraduationCap),
-        date: "2019",
+        date: "2021",
     },
     {
-        title: "Front-End Developer",
-        location: "Orlando, FL",
+        title: "Freelance",
+        location: "Poland, Warsaw",
         description:
-            "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+            "",
         icon: React.createElement(CgWorkAlt),
-        date: "2019 - 2021",
+        date: "2022 - 2023",
     },
     {
-        title: "Full-Stack Developer",
-        location: "Houston, TX",
+        title: "Frontend Developer",
+        location: "Poland, Warsaw",
         description:
-            "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+            "",
         icon: React.createElement(FaReact),
-        date: "2021 - present",
+        date: "2023 - present",
     },
 ] as const;
 
 export const projectsData = [
     {
-        title: "CorpComment",
+        title: "Lifebook:",
         description:
-            "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-        tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-        imageUrl: corpcommentImg,
+            "The project is based on the idea of a social network with the implementation of basic functionality and interaction with the server.",
+        tags: ["React","Redux","TypeScript"],
+        imageUrl: lifebook,
+        link:"https://bogdan-design.github.io/lifebook/",
     },
     {
-        title: "rmtDev",
+        title: "Todolist",
         description:
-            "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-        tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-        imageUrl: rmtdevImg,
+            "The project is an enhanced to-do list with error validation, registration, and the ability to add and delete tasks through a server.",
+        tags: ["React", "TypeScript","Redux","RTK","Formik","Material UI"],
+        imageUrl: todolist,
+        link:"https://bogdan-design.github.io/TodoList/",
     },
     {
-        title: "Word Analytics",
+        title: "Cards",
         description:
-            "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-        tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-        imageUrl: wordanalyticsImg,
+            "The project involves the idea of teaching the English language through flashcards with sentences.",
+        tags: ["React","Vite","Redux","TypeScript","Radix","Storybook"],
+        imageUrl: cards,
+        link:"https://cards-5gl6jt77g-bogdan-design.vercel.app/",
     },
 ] as const;
 
 export const skillsData = [
     "HTML",
     "CSS",
+    "Sass",
     "JavaScript",
     "TypeScript",
     "React",
     "Next.js",
-    "Node.js",
     "Git",
-    "Tailwind",
-    "Prisma",
-    "MongoDB",
+    "React-hook-form",
+    "Formik",
     "Redux",
-    "GraphQL",
-    "Apollo",
-    "Express",
-    "PostgreSQL",
-    "Python",
-    "Django",
-    "Framer Motion",
+    "RTK",
+    "RTK Query",
+    "REST API",
+    "Jest",
+    "Storybook",
+    "TDD",
+    "Material-UI",
+    "Radix",
+    "Headless Ui",
+    "Styled-Component",
+    "Postman",
+    "Swagger",
+    "Figma",
+    "Webpack",
+    "Vite"
 ] as const;
