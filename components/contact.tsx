@@ -6,10 +6,10 @@ import {motion} from "framer-motion";
 import {sendEmail} from "@/actions/sendEmail";
 
 import {SubmitBtn} from "@/components/submit-btn";
+import toast from "react-hot-toast";
 
 export const Contact = () => {
     const {ref} = useSectionInView({sectionName: 'About', threshold: 0.5})
-
 
 
     return (
@@ -37,7 +37,12 @@ export const Contact = () => {
             </p>
             <form className='mt-10 flex flex-col dark:text-black/80'
                   action={async (formData) => {
-                      await sendEmail(formData)
+                      const {data, error} = await sendEmail(formData)
+                      if(error){
+                          toast.error(error)
+                          return
+                      }
+                      toast.success('Email send successfully!')
                   }}
             >
                 <input className='h-14 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80
