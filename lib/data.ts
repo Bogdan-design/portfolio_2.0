@@ -39,7 +39,7 @@ export const experiencesData = [
         location: "Poland, Warsaw",
         description:
             "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-        icon: '../',
+        icon: React.createElement(LuGraduationCap),
         date: "2021",
     },
     {
