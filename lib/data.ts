@@ -83,7 +83,7 @@ export const projectsData = [
             "The project involves the idea of teaching the English language through flashcards with sentences.",
         tags: ["React","Vite","Redux","TypeScript","Radix","Storybook"],
         imageUrl: cards,
-        link:"https://cards-5gl6jt77g-bogdan-design.vercel.app/",
+        link:"https://cards-silk-five-85.vercel.app/",
     },
 ] as const;
 
