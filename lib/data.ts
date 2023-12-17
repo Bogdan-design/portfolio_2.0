@@ -67,7 +67,7 @@ export const projectsData = [
             "The project is based on the idea of a social network with the implementation of basic functionality and interaction with the server.",
         tags: ["React","Redux","TypeScript"],
         imageUrl: lifebook,
-        link:"https://bogdan-design.github.io/",
+        link:"https://bogdan-design.github.io/lifebook/",
     },
     {
         title: "Todolist",
