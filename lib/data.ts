@@ -62,6 +62,14 @@ export const experiencesData = [
 
 export const projectsData = [
     {
+        title: "Cards",
+        description:
+            "The project involves the idea of teaching the English language through flashcards with sentences.",
+        tags: ["React","Vite","Redux","TypeScript","Radix","Storybook"],
+        imageUrl: cards,
+        link:"https://cards-silk-five-85.vercel.app/",
+    },
+    {
         title: "Lifebook:",
         description:
             "The project is based on the idea of a social network with the implementation of basic functionality and interaction with the server.",
@@ -77,14 +85,7 @@ export const projectsData = [
         imageUrl: todolist,
         link:"https://bogdan-design.github.io/TodoList/",
     },
-    {
-        title: "Cards",
-        description:
-            "The project involves the idea of teaching the English language through flashcards with sentences.",
-        tags: ["React","Vite","Redux","TypeScript","Radix","Storybook"],
-        imageUrl: cards,
-        link:"https://cards-silk-five-85.vercel.app/",
-    },
+
 ] as const;
 
 export const skillsData = [
