@@ -1,7 +1,7 @@
 'use client'
 import React from 'react';
 import Image from "next/image";
-import Photo from '@/public/photo_2022-12-17_10-57-22.jpg'
+import Photo from '@/public/photo.jpg'
 import {motion} from "framer-motion";
 import Link from "next/link";
 import {BsArrowRight, BsLinkedin} from "react-icons/bs";
