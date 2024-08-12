@@ -43,20 +43,20 @@ export const experiencesData = [
         date: "2021",
     },
     {
-        title: "Freelance",
+        title: "X-IBIS SP. Z O.O. Frontend Developer",
         location: "Poland, Warsaw",
         description:
             "",
         icon: React.createElement(CgWorkAlt),
-        date: "2022 - 2023",
+        date: "2022 - 2024",
     },
     {
-        title: "Frontend Developer",
+        title: "SiliconArt Sp. Z O.O. Frontend Developer",
         location: "Poland, Warsaw",
         description:
             "",
         icon: React.createElement(FaReact),
-        date: "2023 - present",
+        date: "2024 - present",
     },
 ] as const;
 
