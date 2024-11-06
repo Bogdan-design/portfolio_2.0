@@ -38,12 +38,12 @@ export const experiencesData = [
         title: "Graduated bootcamp",
         location: "Poland, Warsaw",
         description:
-            "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+            "I graduated after 6 months of studying. I immediately found a job as a Fullstack developer.",
         icon: React.createElement(LuGraduationCap),
         date: "2021",
     },
     {
-        title: "X-IBIS SP. Z O.O. Frontend Developer",
+        title: "X-IBIS SP. Z O.O. Fullstack Developer",
         location: "Poland, Warsaw",
         description:
             "",
@@ -51,7 +51,7 @@ export const experiencesData = [
         date: "2022 - 2024",
     },
     {
-        title: "SiliconArt Sp. Z O.O. Frontend Developer",
+        title: "SiliconArt Sp. Z O.O. Fullstack Developer",
         location: "Poland, Warsaw",
         description:
             "",
@@ -92,13 +92,13 @@ export const skillsData = [
     "Node.js",
     "Express",
     "Nest.js",
-    "Sass",
     "JavaScript",
     "TypeScript",
     "React",
     "Next.js",
     "HTML",
     "CSS",
+    "Sass",
     "Git",
     "React-hook-form",
     "Formik",
