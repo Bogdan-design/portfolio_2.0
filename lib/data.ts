@@ -35,29 +35,33 @@ export const links = [
 
 export const experiencesData = [
     {
-        title: "Graduated bootcamp",
+        title: "SiliconArt Sp. Z O.O. Fullstack Developer",
         location: "Poland, Warsaw",
         description:
-            "I graduated after 6 months of studying. I immediately found a job as a Fullstack developer.",
-        icon: React.createElement(LuGraduationCap),
-        date: "2021",
+            "Implemented state management with Redux and RTK Query for efficient data handling. " +
+            "Collaborating with teams to design, develop, and deploy full-stack applications.",
+        icon: React.createElement(FaReact),
+        date: "2024 - present",
     },
     {
         title: "X-IBIS SP. Z O.O. Fullstack Developer",
         location: "Poland, Warsaw",
         description:
-            "",
+            "Developed dynamic web applications with React and Node.js. " +
+            "Implemented state management with Redux and RTK Query for efficient data handling",
         icon: React.createElement(CgWorkAlt),
         date: "2022 - 2024",
     },
     {
-        title: "SiliconArt Sp. Z O.O. Fullstack Developer",
+        title: "Graduated bootcamp",
         location: "Poland, Warsaw",
         description:
-            "",
-        icon: React.createElement(FaReact),
-        date: "2024 - present",
+            "Completed comprehensive training in frontend development, focusing on practical project-based learning.",
+        icon: React.createElement(LuGraduationCap),
+        date: "2021",
     },
+
+
 ] as const;
 
 export const projectsData = [
@@ -106,6 +110,7 @@ export const skillsData = [
     "RTK",
     "RTK Query",
     "REST API",
+    "Docker",
     "Jest",
     "Storybook",
     "TDD",

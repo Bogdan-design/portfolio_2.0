@@ -26,7 +26,7 @@ export const About = () => {
                 feeling of finally figuring out a solution to a problem. My core stack
                 is{" "}
                 <span className="font-medium">
-          TypeScript, React, Next.js and knowledge Node.js, MongoDB
+          TypeScript, React, Next.js, Node.js, Exspress, Nest.js, MongoDB
         </span>
                 .I am always looking to
                 learn new technologies. I am currently looking for a{" "}
