@@ -53,8 +53,7 @@ const {ref} = useSectionInView({sectionName:'Home',threshold: 0.5})
                       animate={{opacity: 1, y: 0}}
             >
                 <span className="font-bold">Hello, I'm Bogdan.</span> I'm a{" "}
-                <span className="font-bold">fullstack developer</span> with{" "}
-                <span className="font-bold">3 years</span> of experience. I enjoy
+                <span className="font-bold">fullstack developer.</span>I enjoy
                 building <span className="italic">sites & apps</span>.
             </motion.h1>
             <motion.div className='flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium'
