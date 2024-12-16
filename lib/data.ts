@@ -5,6 +5,7 @@ import { LuGraduationCap } from "react-icons/lu";
 import lifebook from "@/public/Lifebook.jpg";
 import todolist from "@/public/todolist.jpg";
 import cards from "@/public/cards.jpg";
+import xibis from "@/public/xibis.jpg";
 
 export const links = [
     {
@@ -65,6 +66,14 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData = [
+    {
+        title: "X-IBIS",
+        description:
+            "X-Ibis is a sleek and modern presentation web application designed to showcase projects, services, or ideas effectively.",
+        tags: ["Next.js","TypeScript"],
+        imageUrl: xibis,
+        link:"https://www.x-ibis.com/",
+    },
     {
         title: "Cards",
         description:
